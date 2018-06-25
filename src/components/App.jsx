@@ -19,10 +19,20 @@ function App() {
     display: 'flex',
   }
 
-  const columnStyles = {
+  const idColumnStyles = {
     display: "flex",
     flexDirection: 'column',
-    width: "33%"
+    width: "25%"
+  }
+  const feedColumnStyles = {
+    display: "flex",
+    flexDirection: 'column',
+    width: "50%"
+  }
+  const contactColumnStyles = {
+    display: "flex",
+    flexDirection: 'column',
+    width: "25%"
   }
 
   return (
@@ -31,14 +41,14 @@ function App() {
         <Nav/>
       </div>
       <div style = {makeColumn}>
-        <div style={columnStyles}>
+        <div style={idColumnStyles}>
           <IdBox/>
           <BioBox/>
         </div>
-        <div style={columnStyles}>
+        <div style={feedColumnStyles}>
           <Feed/>
         </div>
-        <div style={columnStyles}>
+        <div style={contactColumnStyles}>
           <Contacts/>
         </div>
       </div>

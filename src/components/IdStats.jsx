@@ -6,15 +6,21 @@ import { globalStyles } from "./App"
 
 function IdStats(){
   const idStatsStyles = {
+    margin: 0,
+    padding: 0,
+    width: "100%",
+    listStyle: 'none',
     display: "flex",
-    justifyContent: "space-between"
+    alignItems: 'flex-end',
+    justifyContent: "space-around",
+    paddingTop: 20
   }
 
   return(
-    <ul style={globalStyles}>
-      <li><StatsTweets/></li>
-      <li><StatsFollowing/></li>
-      <li><StatsFollowers/></li>
+    <ul style={idStatsStyles}>
+      <StatsTweets/>
+      <StatsFollowing/>
+      <StatsFollowers/>
     </ul>
   );
 }

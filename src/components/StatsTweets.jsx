@@ -2,9 +2,7 @@ import React from "react";
 
 function StatsTweets(){
   return (
-    <div>
-      <p>test build</p>
-    </div>
+      <li>tweets</li>
   )
 }
 

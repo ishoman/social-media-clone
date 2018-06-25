@@ -1,9 +1,12 @@
 import React from "react";
+import UserList from "./UserList";
+import ContactsHeader from "./ContactsHeader";
 
 function Contacts(){
   return (
     <div>
-      <p>test build</p>
+      <ContactsHeader/>
+      <UserList/>
     </div>
   )
 }

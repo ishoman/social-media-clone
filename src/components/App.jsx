@@ -5,16 +5,46 @@ import BioBox from "./BioBox";
 import Feed from "./Feed";
 import Contacts from "./Contacts";
 
-function App(){
+const globalStyles = {
+  listStyle: 'none'
+}
+
+function App() {
+  const appStyles = {
+    display: "flex",
+    flexDirection: 'column'
+  }
+
+  const makeColumn = {
+    display: 'flex',
+  }
+
+  const columnStyles = {
+    display: "flex",
+    flexDirection: 'column',
+    width: "33%"
+  }
+
   return (
-    <div>
-      <Nav/>
-      <IdBox/>
-      <BioBox/>
-      <Feed/>
-      <Contacts/>
+    <div style={appStyles}>
+      <div>
+        <Nav/>
+      </div>
+      <div style = {makeColumn}>
+        <div style={columnStyles}>
+          <IdBox/>
+          <BioBox/>
+        </div>
+        <div style={columnStyles}>
+          <Feed/>
+        </div>
+        <div style={columnStyles}>
+          <Contacts/>
+        </div>
+      </div>
     </div>
   );
 }
 
+export {globalStyles};
 export default App;

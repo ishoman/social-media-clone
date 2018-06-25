@@ -3,7 +3,7 @@ import React from "react";
 function IdName(){
   return (
     <div>
-      <p>test build</p>
+      <h3>Kitty Kat</h3>
     </div>
   )
 }

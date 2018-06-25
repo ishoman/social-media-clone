@@ -4,8 +4,12 @@ import IdName from "./IdName";
 import IdPicture from "./IdPicture"
 
 function IdBox(props) {
+  const idBoxStyles = {
+    display: "flex",
+    flexDirection: "column"
+  }
   return (
-    <div>
+    <div style={idBoxStyles}>
       <IdPicture/>
       <IdName/>
       <IdStats/>

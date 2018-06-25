@@ -1,9 +1,12 @@
 import React from "react";
+import NewPostForm from "./NewPostForm";
+import PostList from "./PostList";
 
 function Feed(){
   return (
     <div>
-      <p>test build</p>
+      <NewPostForm/>
+      <PostList/>
     </div>
   )
 }

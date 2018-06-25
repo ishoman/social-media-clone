@@ -2,9 +2,15 @@ import React from "react";
 import NavLinks from "./NavLinks";
 import NavSearch from "./NavSearch";
 
-function Nav(){
+function Nav(props){
+  const navStyles = {
+    display: 'flex',
+    paddingRight: "15px",
+    justifyContent: 'space-between',
+  }
+
   return (
-    <div>
+    <div style={navStyles}>
       <NavLinks/>
       <NavSearch/>
     </div>
